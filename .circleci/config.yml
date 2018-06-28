@@ -2,7 +2,7 @@ version: 2
 jobs:
    build:
      docker:
-       - image: circleci/python:3.6.5
+       - image: anhill/circleci-node6.14.2-npm
      steps:
        - checkout
        - run: python helloWorld.py
