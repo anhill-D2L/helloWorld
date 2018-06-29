@@ -7,7 +7,7 @@ jobs:
        - checkout
        - run: python helloWorld.py
        - run: git clone git@github.com:anhill-D2L/files.git
-       - run: chmod 777 files/*.*
+       - run: chmod 755 files/*
        - run: python helloWorld.py
        - run: ./files/myscript.sh
 workflows:
