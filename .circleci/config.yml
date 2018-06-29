@@ -8,10 +8,10 @@ jobs:
        - run: python helloWorld.py
        - run: git clone git@github.com:anhill-D2L/files.git
        - run: chmod 777 files/*.*
-       - run: ls -l files\
+       - run: ls -l files
        - run: cd files
        - run: ls
-       - run: ./files/myscript.sh
+       - run: ./myscript.sh
        - run: ls
 workflows:
   version: 2
