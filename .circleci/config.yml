@@ -6,14 +6,9 @@ jobs:
      steps:
        - checkout
        - run: python helloWorld.py
-       - run:
-          command: |
-            git clone git@github.com:anhill-D2L/files.git
-            chmod +x files/*.*
-            ./files/myscript.sh
-            ./files/test1.sh
-            ./files/test2.sh
-            ./files/test1.sh
+       - run: git clone git@github.com:anhill-D2L/files.git
+       - run: python helloWorld.py
+       - run: ./files/myscript.sh
 workflows:
   version: 2
   deploy:
