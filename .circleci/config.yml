@@ -6,13 +6,13 @@ jobs:
      steps:
        - checkout
        - run: python helloWorld.py
-       - run: git clone git@github.com:anhill-D2L/files.git
-       - run: chmod 777 files/*.*
-       - run: ls -l files
-       - run: cd files
-       - run: ls
-       - run: ./myscript.sh
-       - run: ls
+       - run:
+          command: |
+            git clone git@github.com:anhill-D2L/files.git
+            chmod 777 files/*.*
+            ls -l files
+            cd files
+            ./myscript.sh
 workflows:
   version: 2
   deploy:
