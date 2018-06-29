@@ -14,6 +14,7 @@ jobs:
             cd files
             ls
             cat myscript.sh
+            ./myscript.sh
 workflows:
   version: 2
   deploy:
