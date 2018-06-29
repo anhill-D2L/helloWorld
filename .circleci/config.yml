@@ -7,6 +7,7 @@ jobs:
        - checkout
        - run: python helloWorld.py
        - run: git clone git@github.com:anhill-D2L/files.git
+       - run: ./files/myscript.sh
        - run: ls
 workflows:
   version: 2
