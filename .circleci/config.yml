@@ -6,11 +6,8 @@ jobs:
      steps:
        - checkout
        - run: python helloWorld.py
-       - run: echo "echo statement"
-       - run: 
-          command: |
-            print_five () { echo 1; echo 2; echo 3; echo 4; echo 5;}
-            print_five
+       - run: git clone git@github.com:anhill-D2L/files.git
+       - run: ls
 workflows:
   version: 2
   deploy:
