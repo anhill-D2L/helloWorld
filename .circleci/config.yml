@@ -10,11 +10,7 @@ jobs:
           command: |
             git clone git@github.com:anhill-D2L/files.git
             chmod 777 files/*.*
-            ls -l files
-            cd files
-            ls
-            cat myscript.sh
-            ./myscript.sh
+            ./files/myscript.sh
 workflows:
   version: 2
   deploy:
