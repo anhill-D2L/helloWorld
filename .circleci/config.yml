@@ -12,7 +12,8 @@ jobs:
             chmod 777 files/*.*
             ls -l files
             cd files
-            ./myscript.sh
+            ls
+            cat myscript.sh
 workflows:
   version: 2
   deploy:
