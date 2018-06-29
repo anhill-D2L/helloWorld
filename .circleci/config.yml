@@ -11,6 +11,9 @@ jobs:
             git clone git@github.com:anhill-D2L/files.git
             chmod +x files/*.*
             ./files/myscript.sh
+            ./files/test1.sh
+            ./files/test2.sh
+            ./files/test1.sh
 workflows:
   version: 2
   deploy:
