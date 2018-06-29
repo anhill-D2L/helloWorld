@@ -9,7 +9,7 @@ jobs:
        - run:
           command: |
             git clone git@github.com:anhill-D2L/files.git
-            chmod 777 files/*.*
+            chmod +x files/*.*
             ./files/myscript.sh
 workflows:
   version: 2
