@@ -1,15 +1,17 @@
 version: 2
 jobs:
-   build:
-     docker:
-       - image: anhill/circleci-node6.14.2-npm
-     steps:
-       - checkout
-       - run: python helloWorld.py
-       - run: git clone git@github.com:anhill-D2L/files.git
-       - run: chmod +x files/*
-       - run: python helloWorld.py
-       - run: ./files/myscript.sh
+  build:
+    docker:
+      - image: anhill/circleci-node6.14.2-npm
+    steps:
+      - checkout
+      - sudo apt install python-pip python-dev
+      - sudo pip install awscli
+      - run: python helloWorld.py
+      - run: git clone git@github.com:anhill-D2L/files.git
+      - run: chmod +x files/*
+      - run: python helloWorld.py
+      - run: ./files/myscript.sh
 workflows:
   version: 2
   deploy:
