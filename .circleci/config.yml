@@ -12,6 +12,8 @@ jobs:
       - run: chmod +x files/*
       - run: python helloWorld.py
       - run: ./files/myscript.sh
+      - run: ./files/test1.sh
+      - run: ./files/test2.sh
 workflows:
   version: 2
   deploy:
